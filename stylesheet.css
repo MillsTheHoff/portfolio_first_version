@@ -1,0 +1,150 @@
+/* Core Styles */
+
+body {
+    margin: 0em;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-style: none;
+}
+
+video {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+ .btn {
+    
+    display: block;
+    width: 100%;
+    height: auto;
+    border-style: none;
+} 
+
+
+/* Section b */
+
+#section-b {
+    padding: 2em 1em 1em;
+}
+
+#section-b ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#section-b li {
+    margin-bottom: 1em;
+}
+
+/* media queries */
+
+@media(min-width: 700px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 45em)) 1fr;
+    }
+    #section-b ul {
+        grid-column: 2/4;
+        display: flex;
+        justify-content: space-around;
+    }
+    #section-b li {
+        width: 31%;
+    }
+    .btn {
+        grid-column: 2/4;
+        display: flex;
+        width: 30%;
+        justify-self: center;
+    }
+}
+
+.space {
+    padding: 6em 2em 2em 2em;
+    
+}
+
+/* sektion a aka portfolio */
+
+#section-a ul {
+    list-style: none;
+    margin: 0;
+    padding: 1em;
+}
+
+#section-a li {
+    margin-bottom: 1em;
+}
+
+/* media queries */
+
+@media(min-width: 700px) {
+    .grid-1 {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 45em)) 1fr;
+    }
+    #section-a ul {
+        grid-column: 2/4;
+        display: flex;
+        justify-content: space-around;
+    }
+    #section-a li {
+        width: 31%;
+    }
+    
+    .grid-3 {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 15em)) 1fr;
+
+    }
+}
+    
+    footer {
+        justify-content: space-around;
+        display: flex;
+        background-color: black;
+        height: auto;
+        width: auto;
+        padding: 5em;   
+    }
+        
+    .icons {
+        display: block;
+        grid-column: 1; 
+        width: 10em;
+        justify-self: center;
+    }
+}
+
+    
+    /* portfolio hover effekt */
+    
+.brighten img {
+-webkit-filter: brightness(100%);
+-webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-o-transition: all 1s ease;
+-ms-transition: all 1s ease;
+transition: all 1s ease;
+}
+
+.brighten img:hover {
+-webkit-filter: brightness(150%);
+}
+    
+/* portfolio inverter hover effekt */
+    
+.edit-img:hover img {
+    -webkit-filter: invert(100%);
+}
+
+    /* ikon footer effekt */
+    
+.edit-1-img:hover img {
+    -webkit-filter: invert(50%);
+}

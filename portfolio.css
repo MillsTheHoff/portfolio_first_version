@@ -1,0 +1,70 @@
+/* Core Styles */
+
+body {
+    margin: 0em;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 2em;
+    justify-self: right;
+    border-style: none;
+}
+
+.tid {
+    width: 100%;
+    padding: 0em;
+    margin: 0em;
+}
+   
+video {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 2em;
+    padding-top: 2em;
+
+}
+
+.link {
+    width: 50%;
+    padding: 2vw;
+    }
+
+/* media queries */
+
+@media(min-width: 700px) {
+    .grid-1 {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(auto, 35em));
+        padding: 2em;
+        justify-content: center;
+        font-family: montserrat, Helvetica, sans-serif;
+    }
+    
+    a {
+        text-decoration: none;
+        color: hotpink;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+        color: lightpink;
+    }
+    
+    a:visited {
+        color: midnightblue;
+    }
+    
+    .text {
+        margin: 2vw;
+    }
+}
+
+    /* portfolio inverter hover effekt */
+    
+#edit-img:hover img {
+    -webkit-filter: invert(50%);
+}
